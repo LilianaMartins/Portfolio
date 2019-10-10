@@ -4,6 +4,8 @@
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--light-text-color);
+
 }
 
 
@@ -178,7 +180,6 @@ p {
 
 .portfolio {
   color: var(--dark-text-color);
-  background-color: var(--light-text-color);
   font-size: 0.5em;
   padding-top: 150px;
   padding-bottom: 150px;
@@ -206,12 +207,10 @@ p {
 
 .fadeIn:nth-child(even) {
   align-self: flex-end;
-  transform: rotate(-10deg); /* Equal to rotateZ(45deg) */
 }
 
 .fadeIn:nth-child(odd) {
   align-self: flex-start;
-  transform: rotate(-10deg); /* Equal to rotateZ(45deg) */
 
 }
 
