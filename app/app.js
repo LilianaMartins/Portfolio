@@ -1,5 +1,28 @@
-// v1 lead text animation loop without brackets
+// change colour of navbar when scrolled past heroheader
+var headerHeight = $("div.header").height();
 
+$(document).ready(function(){
+   $(window).scroll(function(){
+     var scroll = $(window).scrollTop();
+     if (scroll > headerHeight && matchMedia("(min-width: 700px)").matches) {
+       $('.nav-item').css('color','black');
+     }
+
+     else {
+       $('.nav-item').css('color','white');
+     }
+   })
+ })
+
+ console.log(headerHeight);
+
+
+
+
+
+
+
+// v1 lead text animation loop without brackets
 
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;

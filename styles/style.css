@@ -148,10 +148,13 @@ p {
 }
 
 #myWork {
-  color: var(--light-text-color);
+  color: var(--light-lead-color);
   font-size: 2em;
 }
 
+#portfolio {
+  min-height: 700px;
+}
 
 
 /* buttons */
