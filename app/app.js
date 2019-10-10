@@ -110,3 +110,12 @@ $(document).ready(function() {
     });
 
 });
+
+
+//play gif of projects
+
+
+$("img", ".gifs-rows").hover(function() {
+  $('.preset-file').toggle();
+  $('.gif-file').toggle();
+});

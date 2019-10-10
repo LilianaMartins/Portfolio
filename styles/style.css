@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: var(--light-text-color);
+  overflow-x: hidden;
 
 }
 
@@ -194,6 +195,14 @@ p {
   box-shadow: 1px 4px 15px 4px rgba(109,109,109,0.82);
 }
 
+.gifs-rows .gif-file {
+  display:none;
+  width: 502.750px;
+}
+
+
+
+
 .fadeIn {
   opacity:0;
   height: 35vh;
@@ -216,8 +225,6 @@ p {
 
 .fadeIn p {
   color: var(--dark-text-color);
-
-
 
 }
 
