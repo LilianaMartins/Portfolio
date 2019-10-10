@@ -19,6 +19,15 @@ body {
   flex-direction: row;
 }
 
+/* position */
+
+.align-self-end {
+  align-self: flex-end;
+}
+
+.align-self-start {
+  align-self: flex-start;
+}
 /* vertical and horizontal alignment for div content */
 .centerVH {
   justify-content: center;
@@ -106,7 +115,6 @@ nav li.textLeft {
   position: absolute;
   left: 10px;
   top: 0;
-  text-shadow: 1px 1px white;
   font-family: var(--lead-text-font);
   font-size: 1.5em;
 
@@ -154,6 +162,36 @@ p {
 
 #portfolio {
   min-height: 700px;
+  color: var(--dark-text-color);
+  background-color: var(--light-text-color);
+  font-size: 0.5em;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+.fadeIn {
+  opacity:0;
+  height: 50vh;
+  width:50vw;
+  /* background-color: #262626; */
+  margin: 20px;
+  justify-content: space-between;
+
+  /* -webkit-box-shadow: 1px 4px 15px 4px rgba(109,109,109,0.82);
+box-shadow: 1px 4px 15px 4px rgba(109,109,109,0.82); */
+
+}
+
+.fadeIn p {
+  color: var(--dark-text-color);
+
+}
+
+
+.websitePreview {
+  height: 100%;
+  width: auto;
+
 }
 
 
