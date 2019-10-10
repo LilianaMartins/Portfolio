@@ -1,57 +1,161 @@
+/* inport fonts here */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300|Quicksand&display=swap');
+
 body {
   padding: 0;
-  margin:0;
-  background: #D7D1BB;
-  background: -webkit-linear-gradient(top left, #D7D1BB, #B1B0C0);
-  background: -moz-linear-gradient(top left, #D7D1BB, #B1B0C0);
-  background: linear-gradient(to bottom right, #D7D1BB, #B1B0C0);
-
+  margin: 0;
 }
 
+/* -----pre-def flex settings ----- */
+.flex{
+  display: flex;
+}
 
-div {
-  height: 100%;
-  display:flex;
-  align-items: center;
-  justify-content: center;
-  vertical-align: middle;
+/* flex direction */
+.flexCol {
   flex-direction: column;
 }
-
-h1 {
-  font-family: 'Bungee Hairline', cursive;
-  margin-bottom: 0px;
-}
-
-
-.montserratLight {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: lighter;
-    margin: 10px;
-
-}
-
-
-
-#social {
-  display: flex;
+.flexRow {
   flex-direction: row;
+}
+
+/* vertical and horizontal alignment for div content */
+.centerVH {
+  justify-content: center;
+  align-items: center;
+}
+
+
+/* --- full scree divs ---- */
+
+.fullScreen {
+  height: 100vh;
+  width: 100vw;
+}
+
+.fsBackgroundimg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* ----- default text colour and font -----*/
+
+:root {
+  /* text colours */
+  --light-lead-color: #eae8ff;
+  --light-text-color: #c8c6d7;
+  --dark-lead-color: #2d3142;
+  --dark-text-color: #444554;
+  /* fonts */
+  --main-text-font: 'Open Sans', sans-serif;
+  --lead-text-font: 'Quicksand', sans-serif;
+}
+
+/* text options */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.downcase {
+  text-transform: lowercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.textRight {
+  text-align: right;
+}
+.textLeft {
+  text-align: left;
+}
+
+/* ---- transparency ---- */
+.transparent {
+  background-color: transparent;
+}
+
+/* ---- lists ---- */
+
+.listPlain {
   list-style-type: none;
-  padding: 0px;
-  margin: 0px;
+}
 
+
+/* ---- project specific ------ */
+
+/* nav */
+nav {
+  position: fixed;
+  color: var(--light-lead-color);
+  font-family: var(--lead-text-font);
+}
+nav ul {
+  width: 95vw;
+  margin: 20px;
+}
+
+nav li {
+display: inline;
+padding: 10px;
+}
+
+nav li.textLeft {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  text-shadow: 1px 1px white;
+  font-family: var(--lead-text-font);
+  font-size: 1.5em;
 
 }
 
-li {
+/* header */
+.header {
+  background-image: url("https://images.unsplash.com/photo-1441731630438-264c7fe00bca?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2850&q=80");
+
+}
+
+/* header content */
+h1 {
+  color: var(--light-text-color);
+  font-family: var(--lead-text-font);
+  font-size: 4em;
   margin: 10px;
-  padding: 10px;
-  font-size: 20px;
+}
 
+h1 span {
+  color: var(--light-lead-color);
+}
+
+p {
+  color: var(--light-text-color);
+  font-family: var(--main-text-font);
+  font-size: 2em;
+  margin: 10px;
+}
+
+.myPortfolioArrow {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+}
+
+.myPortfolioArrow p {
+  font-size: 1em;
+}
+
+#myWork {
+  color: var(--light-text-color);
+  font-size: 2em;
 }
 
 
-.svg-inline--fa {
-  font-size: 35px;
-}
 
+/* buttons */
+/* icons from font-awesome */
+/* zooming hovers */
+/* parallaxes */
+/* footer and contacts */
