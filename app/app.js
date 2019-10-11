@@ -111,7 +111,6 @@ $(document).ready(function() {
 
 });
 
-
 //play gif of projects
 
 
